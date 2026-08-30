@@ -1,8 +1,63 @@
 import streamlit as st
 
-st.set_page_config(page_title="PyCinema Booking System", page_icon="🎬")
+st.set_page_config(page_title="PyCinema Booking System", page_icon="🎬", layout="wide")
+
+# ============================================================
+# ABOUT ME — sidebar
+# ============================================================
+with st.sidebar:
+    st.markdown(
+        """
+        <div style="text-align:center;">
+            <div style="
+                width:120px;height:120px;border-radius:50%;
+                background:linear-gradient(135deg,#4B6CB7,#182848);
+                display:flex;align-items:center;justify-content:center;
+                margin:0 auto 12px auto;font-size:48px;color:white;">
+                🧠
+            </div>
+            <h3 style="margin-bottom:0;">Mirza Yasir Abdullah Baig</h3>
+            <p style="color:gray;margin-top:2px;">AI Engineer</p>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+    st.markdown("---")
+    st.markdown("### 👨‍💻 About Me")
+    st.markdown(
+        """
+- 🤖 **AI Engineer**
+- 🏫 **Code Instructor** at *iCodeGuru*
+- 🎓 **Master's / PhD Aspirant**
+- 🌍 **Top 1% AI Creator** in the World
+        """
+    )
+
+    st.markdown("---")
+    st.markdown("### 🏆 Highlights")
+    col1, col2 = st.columns(2)
+    with col1:
+        st.metric("Rank", "Top 1%")
+    with col2:
+        st.metric("Role", "AI Engineer")
+
+    st.markdown("---")
+    st.markdown("### 🔗 Connect")
+    st.markdown(
+        """
+        <a href="#" style="text-decoration:none;">🔗 LinkedIn</a> &nbsp;|&nbsp;
+        <a href="#" style="text-decoration:none;">💻 GitHub</a> &nbsp;|&nbsp;
+        <a href="#" style="text-decoration:none;">📩 Email</a>
+        """,
+        unsafe_allow_html=True,
+    )
+
+    st.markdown("---")
+    st.caption("Built with ❤️ using Python & Streamlit")
 
 st.title("🎬 PyCinema Booking System")
+st.caption("A console-logic-turned-web ticket booking & billing simulation.")
 
 # ============================================================
 # DATA — list, dictionary, tuple (same as console version)
