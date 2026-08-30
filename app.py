@@ -46,9 +46,9 @@ with st.sidebar:
     st.markdown("### 🔗 Connect")
     st.markdown(
         """
-        <a href="#" style="text-decoration:none;">🔗 LinkedIn</a> &nbsp;|&nbsp;
-        <a href="#" style="text-decoration:none;">💻 GitHub</a> &nbsp;|&nbsp;
-        <a href="#" style="text-decoration:none;">📩 Email</a>
+        <a href="https://www.linkedin.com/in/mirza-yasir-abdullah-baig/" style="text-decoration:none;">🔗 LinkedIn</a> &nbsp;|&nbsp;
+        <a href="https://github.com/mirzayasirabdullahbaig07/" style="text-decoration:none;">💻 GitHub</a> &nbsp;|&nbsp;
+        <a href="mailto:yasirabdullah4549@gmail.com" style="text-decoration:none;">📩 Email</a>
         """,
         unsafe_allow_html=True,
     )
